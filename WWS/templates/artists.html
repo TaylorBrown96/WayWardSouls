@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='owl.css')}}">
+
+    <title>WayWard Souls</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index"><h2>WayWard Souls <em>Tattoo &amp; Art Studio</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index">Home</a></li> 
+				        <li class="nav-item"><a class="nav-link" href="location">Location</a></li>
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="artists">Artists</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="store">Online Store</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="usr_acc">Account</a>
+                      <a class="dropdown-item" href="usr_log">Sign In</a>
+                      <a class="dropdown-item" href="accCreation">Sign Up/Register</a>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="page-heading about-heading header-text" style="background-image: url(/static/images/art_ban.png);">
+    </div>
+
+
+      <div class="team-members">
+        <div class="container">
+          <div class="row">
+
+            <!-- Brittany -->
+            <div class="col-md-4"><a class="nav-link" href="brittany">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <image src="{{url_for('static',filename = 'images/brittany.jpg')}}" >
+                  <div class="hover-effect" >
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Brittany Hinkel</h4>
+                  <span>Tattoo Artist</span>
+                </div>
+              </div>
+            </a></div>
+            <!-- END -->
+
+            <!-- Brandy -->
+            <div class="col-md-4"><a class="nav-link" href="brandy">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <image src="{{url_for('static',filename = 'images/brandy.jpg')}}" >
+                  <div class="hover-effect">
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Brandy Hinkel &#40;VooVoo&#41;</h4>
+                  <span>Tattoo Artist</span>
+                </div>
+              </div>
+            </a></div>
+            <!-- END -->
+
+            <!-- Faith -->
+            <div class="col-md-4"><a class="nav-link" href="faith">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <image src="{{url_for('static',filename = 'images/faith.jpg')}}" >
+                  <div class="hover-effect">
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Faith G-Brown</h4>
+                  <span>Tattoo Artist</span>
+                </div>
+              </div>
+            </a></div>
+            <!-- END -->
+
+            <!-- Chelsea -->
+            <div class="col-md-4"><a class="nav-link" href="chelsea">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <image src="{{url_for('static',filename = 'images/chelsea.jpg')}}" >
+                  <div class="hover-effect">
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Chelsea Bogue</h4>
+                  <span>Tattoo Apprentice</span>
+                </div>
+              </div>
+            </a></div>
+            <!-- END -->
+
+            <!-- Deshawn -->
+            <div class="col-md-4"><a class="nav-link" href="deshawn">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <image src="{{url_for('static',filename = 'images/deshawn.jpg')}}" >
+                  <div class="hover-effect">
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>DeShawn Harris</h4>
+                  <span>Tattoo Apprentice</span>
+                </div>
+              </div>
+            </a></div>
+            <!-- END -->
+
+            <!-- Tonya -->
+            <div class="col-md-4"><a class="nav-link" href="tonya">
+              <div class="team-member">
+                <div class="thumb-container">
+                  <image src="{{url_for('static',filename = 'images/tonya.jpg')}}" >
+                  <div class="hover-effect">
+                  </div>
+                </div>
+                <div class="down-content">
+                  <h4>Tonya Fred</h4>
+                  <span>Piercer</span>
+                </div>
+              </div>
+            </a></div>
+            <!-- END -->
+            
+
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright © 2020 WayWard Souls LLC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
