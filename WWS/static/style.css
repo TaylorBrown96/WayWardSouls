@@ -277,8 +277,8 @@ header .navbar {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
-	background-color: #fff;	
+	border-color: #121212;
+	background-color: #121212;	
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
@@ -1069,6 +1069,10 @@ footer .inner-content p a {
 	.navbar .navbar-brand {
 		width: auto;
 	}
+	.navbar .navbar-brand h2 em {
+	font-style: normal;
+	color: transparent;
+  }
 	.navbar:after {
 		display: none;
 	}

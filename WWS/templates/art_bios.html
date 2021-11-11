@@ -46,12 +46,12 @@
     <br>
     <br>
     <br>
-    <div class="page-heading about-heading header-text" style="background-image: url(static/images/bio_ban.png);">
+    <div class="page-heading about-heading header-text" style="background-image: url(static/images/bio_ban.png); background-size: fit;">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <h2>{{ NAME }}</h2>
+              <h2 style="margin-bottom: ;-bottom: 10px;">{{ NAME }}</h2>
             </div>
           </div>
         </div>
@@ -63,15 +63,21 @@
       <div class="row g-0">
         <div class="col-md-4">
           <img src="{{ user_image }}" class="img-fluid rounded-start" alt="Image not found">
+          <button type="button" class="btn btn-secondary btn-lg" style="background-color: #f33f3f; width: inherit; margin-bottom: 1.5%;"><a href="{{ BOOKER }}" style="color: black;">Book A Consultation</a></button>
         </div>
         <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">About Me</h5>
-            <p class="card-text" style="padding-right: 4%">{{ text }}</p>
+          <div class="card-body" style="padding-top: 3%;">
+            <h5 class="card-title"><u>About Me:</u></h5>
+            <p class="card-text" style="margin-right: 4%;">{{ text }}</p>
+            {% if IG_URL == "NONE" %}
+              <br>
+            {% else %}
+              <ul class="social-icons">
+                <li><a href="{{ IG_URL }}" target="_blank"><i class='fa fa-instagram'></i></a></i></li>
+              </ul>
+            {% endif %}
             <br>
-            <br>
-            <br>
-            <button type="button" class="btn btn-secondary btn-lg" style="hover-effect: "><a href="{{ BOOKER }}" style="color: black;">Book A Consultation</a></button>
+
           </div>
         </div>
       </div>
@@ -108,7 +114,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="inner-content">
-              <p>Copyright © 2020 WayWard Souls LLC</p>
+              <p>Copyright © 2021 WayWard Souls LLC</p>
             </div>
           </div>
         </div>

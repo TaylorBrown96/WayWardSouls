@@ -55,9 +55,10 @@ def Brittany_bio():
 	NAME = "Brittany Hinkel"
 	BOOKER = "brittany/book"
 	URL = "https://calendar.google.com/calendar/embed?src=forthewubwubs%40gmail.com&ctz=America%2FLos_Angeles"
+	IG_URL = "NONE"
 
 	with open('templates/bios/brittany.txt', 'r') as f:
-		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
+		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , IG_URL = IG_URL, SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
 
 @app.route("/brandy")
 def Brandy_bio():
@@ -68,10 +69,12 @@ def Brandy_bio():
 	SLIDER_4 = os.path.join(app.config['tattoo'], 'bran4.jpg')
 
 	NAME = "Brandy Hinkel"
+	BOOKER = "brandy/book"
 	URL = "https://calendar.google.com/calendar/embed?src=forthewubwubs%40gmail.com&ctz=America%2FLos_Angeles"
+	IG_URL = "https://www.instagram.com/voovootattoo/"
 
 	with open('templates/bios/brandy.txt', 'r') as f:
-		return render_template('art_bios.html', text=f.read(), user_image = Profile, NAME = NAME, URL = URL , SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
+		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , IG_URL = IG_URL, SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
 
 @app.route("/faith")
 def Faith_bio():
@@ -82,10 +85,12 @@ def Faith_bio():
 	SLIDER_4 = os.path.join(app.config['tattoo'], 'fait4.jpg')
 
 	NAME = "Faith G-Brown"
+	BOOKER = "faith/book"
 	URL = "https://calendar.google.com/calendar/embed?src=forthewubwubs%40gmail.com&ctz=America%2FLos_Angeles"
+	IG_URL = "https://www.instagram.com/faithgbrown/"
 
 	with open('templates/bios/faith.txt', 'r') as f:
-		return render_template('art_bios.html', text=f.read(), user_image = Profile, NAME = NAME, URL = URL , SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
+		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , IG_URL = IG_URL, SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
 
 @app.route("/chelsea")
 def Chelsea_bio():
@@ -96,10 +101,12 @@ def Chelsea_bio():
 	SLIDER_4 = os.path.join(app.config['tattoo'], 'chel4.jpg')
 
 	NAME = "Chelsea Bouge"
+	BOOKER = "chelsea/book"
 	URL = "https://calendar.google.com/calendar/embed?src=forthewubwubs%40gmail.com&ctz=America%2FLos_Angeles"
+	IG_URL = "https://www.instagram.com/damn_chelsea/"
 
 	with open('templates/bios/chelsea.txt', 'r') as f:
-		return render_template('art_bios.html', text=f.read(), user_image = Profile, NAME = NAME, URL = URL , SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
+		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , IG_URL = IG_URL, SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
 
 @app.route("/deshawn")
 def Deshawn_bio():
@@ -109,11 +116,13 @@ def Deshawn_bio():
 	SLIDER_3 = os.path.join(app.config['tattoo'], 'desh3.jpg')
 	SLIDER_4 = os.path.join(app.config['tattoo'], 'desh4.jpg')
 
-	NAME = "Deshwan Harris"
+	NAME = "Deshawn Harris"
+	BOOKER = "deshawn/book"
 	URL = "https://calendar.google.com/calendar/embed?src=forthewubwubs%40gmail.com&ctz=America%2FLos_Angeles"
+	IG_URL = "https://www.instagram.com/religiontattoo/"
 
 	with open('templates/bios/deshawn.txt', 'r') as f:
-		return render_template('art_bios.html', text=f.read(), user_image = Profile, NAME = NAME, URL = URL , SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
+		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , IG_URL = IG_URL, SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
 
 @app.route("/tonya")
 def Tonya_bio():
@@ -124,10 +133,12 @@ def Tonya_bio():
 	SLIDER_4 = os.path.join(app.config['tattoo'], 'tony4.jpg')
 
 	NAME = "Tonya Fred"
+	BOOKER = "tonya/book"
 	URL = "https://calendar.google.com/calendar/embed?src=forthewubwubs%40gmail.com&ctz=America%2FLos_Angeles"
+	IG_URL = "https://www.instagram.com/just_here_nor_there/"
 
 	with open('templates/bios/tonya.txt', 'r') as f:
-		return render_template('art_bios.html', text=f.read(), user_image = Profile, NAME = NAME, URL = URL , SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
+		return render_template('art_bios.html', BOOKER = BOOKER, text=f.read(), user_image = Profile, NAME = NAME, URL = URL , IG_URL = IG_URL, SLIDER_1 = SLIDER_1, SLIDER_2 = SLIDER_2, SLIDER_3 = SLIDER_3, SLIDER_4 = SLIDER_4)
 
 @app.route("/brittany/book")
 def brit_book():
