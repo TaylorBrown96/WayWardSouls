@@ -714,7 +714,7 @@ footer .inner-content p a {
 
 .team-member .thumb-container .hover-effect {
 	position: absolute;
-	background-color: rgba(243,63,63,0.5);
+	background-color: rgba(243,63,63,0.35);
 	top: 0;
 	left: 0;
 	width: 100%;
