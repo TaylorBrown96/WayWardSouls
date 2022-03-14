@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='owl.css')}}">
+
+    <title>WayWard Souls</title>
+  </head>
+  <body>
+
+<!--Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="home"><h2>WayWard Souls <em>Tattoo &amp; Art Studio</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
+				        <li class="nav-item"><a class="nav-link" href="location">Location</a></li>
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="artists">Artists</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="store">Online Store</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!-- Page Content -->
+    <br>
+    <br>
+    <br>
+    <div class="page-heading about-heading header-text" style="background-image: url(static/images/bio_ban.png); background-size: fit;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h2 style="margin-bottom: ;-bottom: 10px;">{{ NAME }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio card -->
+    <div class="card mb-2" style="margin-top: 15px; margin-left: 15%; margin-right: 15%; align-content: center">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="{{ user_image }}" class="img-fluid rounded-start" alt="Image not found">
+          <button type="button" class="btn btn-secondary btn-lg" style="background-color: #f33f3f; border-color: #f33f3f; width: inherit; margin-bottom: 1.5%;"><a href="{{ BOOKER }}" style="color: black;">Book A Consultation</a></button>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body" style="padding-top: 3%;">
+            <h5 class="card-title"><u>About Me:</u></h5>
+            <p class="card-text" style="margin-right: 4%;">{{ text }}</p>
+            {% if IG_URL == "NONE" %}
+              <br>
+            {% else %}
+              <ul class="social-icons">
+                <li><a href="{{ IG_URL }}" target="_blank"><i class='fa fa-instagram'></i></a></i></li>
+              </ul>
+            {% endif %}
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Image slider-->
+    {% if SLIDER_1 != "NONE" %}
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="max-width: 75%; max-height: 45%; margin: auto; ">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="object-fit:scale-down; margin: auto;">
+              <img src="{{ SLIDER_1 }}" class="d-block w-100" alt="...">
+            </div>
+            {% if SLIDER_2 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_2 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_3 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_3 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_4 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_4 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_5 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_5 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_6 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_6 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_7 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_7 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_8 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_8 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_9 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_9 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+            {% if SLIDER_10 != "NONE" %}
+                <div class="carousel-item" style="object-fit:scale-down; margin: auto;">
+                  <img src="{{ SLIDER_10 }}" class="d-block w-100" alt="...">
+                </div>
+            {% endif %}
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    {% endif %}
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright © 2020-2022 WayWard Souls LLC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

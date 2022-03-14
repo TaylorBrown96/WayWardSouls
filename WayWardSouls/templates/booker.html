@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='owl.css')}}">
+
+    <title>WayWard Souls</title>
+  </head>
+  <body>
+
+<!--Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/home"><h2>WayWard Souls <em>Tattoo &amp; Art Studio</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+				        <li class="nav-item"><a class="nav-link" href="/location">Location</a></li>
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="/artists">Artists</a></li>
+                <li class="nav-item"><a class="nav-link" href="/store">Online Store</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!-- Form -->
+      <div class="contact-form" style="padding-top: 7rem; margin-left: 15%; margin-right: 15%;">
+        <h1 style="font-size: 3rem; padding-bottom: 5px;">Contact Us!</h1>
+        <form class="row g-3" action="https://formsubmit.co/b0eb003fc57eb561ae1a49e30e581e63" method="POST">
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next" value="https://taylorbrown1996.pythonanywhere.com/success" >
+          <input type="hidden" name="_template" value="box">
+
+
+          <div class="col-md-4">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="First&nbsp;name" id="first-name" placeholder="John" required>
+          </div>
+          <div class="col-md-4">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="Last&nbsp;name" id="last-name" placeholder="Doe" required>
+          </div>
+          <div class="col-md-4">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" name="Phone" id="phoneNumber" placeholder="(910)723-4518" required>
+          </div>
+          <div class="col-md-7">
+            <label for="emailInfo" class="form-label">E-mail</label>
+            <input type="email" class="form-control" name="Email" id="emailInfo" placeholder="Example@Example.com" required>
+          </div>
+          <div class="form-group col-md-5">
+            <label for="inputArtist">Team Member</label>
+            <select id="inputArtist" name="Selected&nbsp;artist" class="form-control">
+              {{ Form }}
+            </select>
+          </div>
+          <div class="col-md-12">
+            <label for="comments" class="form-label">Comments and/or questions?</label>
+            <textarea class="form-control" id="comments" name="Comments,&nbsp;questions" rows="3" placeholder="What would you like to get done?" required></textarea>
+          </div>
+          <div class="col-md-1">
+            <button class="filled-button" type="submit">Submit</button>
+          </div>
+          <div class="form-check mb-2 mr-sm-2">
+            <div class="form-check" style="padding-top: 5px;">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" style="padding-top: 3px;" for="invalidCheck">
+                I agree to be contacted
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+              <p>Copyright © 2020-2022 WayWard Souls LLC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
